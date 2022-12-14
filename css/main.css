@@ -1,4 +1,7 @@
 /* Global rules */
+*{
+    background-image: url('images/spaceneedle.jpg');
+}
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
@@ -20,7 +23,7 @@ html {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #fff;
+    background: rgb(235, 152, 152);
     line-height: 2.5em;
 }
 /* Addsgoogle font to H1 for main pages*/
