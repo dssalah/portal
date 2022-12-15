@@ -1,7 +1,5 @@
 /* Global rules */
-*{
-    background-image: url('images/wow.jpg\ ');
-  }
+
 header{
     text-align: center;
     color: white;
@@ -9,10 +7,39 @@ header{
 details{
     font-size: small;
 }
+.topsec {
+    background-color: rgb(222, 120, 120);
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    margin: 125px 125px;
+    border-style: outset;
+    border-width: thick;
+    border-left-color: darkkhaki;
+    border-right-color: black;
+    font-size: 14px;
+    
+}
+.top2sec {
+    background-color: rgb(222, 120, 120);
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    margin: 125px 125px;
+    font-size: 14px;
+}
+.top3sec {
+    background-color: rgb(222, 120, 120);
+    font-family: 'Poppins',sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 125px 125px;
+}
 .topnav {
     margin: auto;
     background-color: rgb(95,95,95);
     overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .topnav a {
@@ -24,14 +51,26 @@ details{
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .topnav a.hover, .active {
     background-color: darkcyan;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .topnav .icon {
     display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+p{
+    -webkit-margin-bottom-collapse: collapse;
 }
 
 /* Responsive rules - apply when screen width is less than 1200px */
