@@ -23,7 +23,7 @@ html {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: rgb(235, 152, 152);
+    background-color: rgb(255, 255, 255);
     line-height: 2.5em;
 }
 /* Addsgoogle font to H1 for main pages*/
