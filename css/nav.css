@@ -123,3 +123,135 @@ p{
         width: 100%;
     }
 }
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+    font-family: segoe ui;
+    font-size: 100%;
+    height: 100%;
+  }
+  .container {
+    background: #FFF;
+    min-height: 100%;
+    overflow: auto;
+  }
+  a {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: background-color .16s ease-in;
+  }
+  a:hover {
+    background-color: rgb(13, 218, 183);
+  }
+  .navbar-menu {
+    background-color: rgb(18, 170, 184);
+    margin: 2% auto;
+    max-width: 1000px;
+    width: calc(100%);
+  }
+  /* Menu */
+  .navbar-menu .menu {
+    display: block;
+    text-align: center;
+  }
+  /* List items*/
+  .navbar-menu .menu li {
+    display: inline-block;
+  }
+  .navbar-menu .menu li:hover > .submenu {
+    display: block;
+    -webkit-animation-name: showSubMenu;
+    -webkit-animation-duration: .4s;
+  }
+  .navbar-menu .menu li ul {
+    background-color: #08beb5;
+    display: none;
+    position: absolute;
+  }
+  .navbar-menu .menu li ul li {
+    display: block;
+  }
+  .navbar-menu .menu li ul li a:active {
+    -webkit-animation-name: hideSubMenu;
+    -webkit-animation-duration: .4s;
+  }
+  /******************************************************
+                          sub MENU
+  ******************************************************/
+  /* Mini menu */
+  .navbar-mini-menu {
+    background-color: #08beb5;
+    display: none;
+  }
+  .navbar-mini-menu .menu-select {
+    color: #fff;
+    padding: 1rem 1.5rem;
+  }
+  .navbar-mini-menu .menu-select .btn-select {
+    background: url("https://imgur.com/VbcTojM.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    top: 10px;
+  }
+  .navbar-mini-menu .mini-menu-options {
+    display: block;
+  }
+  .navbar-mini-menu .mini-menu-options li {
+    display: block;
+  }
+  .navbar-mini-menu .mini-menu-options li .submenu {
+    display: none;
+  }
+  .navbar-mini-menu .mini-menu-options li:focus {
+    outline: 0;
+  }
+  .navbar-mini-menu .mini-menu-options li:focus > .submenu {
+    display: block;
+    -webkit-animation-name: showSubMenu;
+    -webkit-animation-duration: .4s;
+  }
+  .navbar-mini-menu .mini-menu-options li a {
+    display: block;
+    padding: 1rem 1.5rem;
+  }
+  @-webkit-keyframes showSubMenu {
+      0% {
+        transform: scale(0,0);
+      }
+    100% {
+      transform: scale(1,1);
+    }
+  }
+  @-webkit-keyframes hideSubMenu {
+    0% {
+      transform: scale(1,1);
+    }
+    100% {
+      transform: scale(0,0);
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .navbar-menu {
+      margin: 0;
+    }
+    .navbar-menu .menu {
+      display: none;
+    }
+    .navbar-mini-menu {
+      display: block;
+    }
+    .navbar-mini-menu .mini-menu-options {
+      display: none;
+    }
+  }
+  
