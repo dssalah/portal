@@ -96,7 +96,7 @@ footer {
     display:inline-block;
     padding:2px;
     max-width:300px; /* actual size of image */
-    min-height: 244px;
+    max-height: 244px;
 }
 
 /* TABLET */
